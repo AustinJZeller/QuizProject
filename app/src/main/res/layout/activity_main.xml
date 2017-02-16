@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="@string/basketball_rules_quizzer"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/question3text"
+                android:text="@string/_11164"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/question1value"
+                android:layout_below="@id/question3text"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/what_is_it_called_when_a_player_scores_a_point"
+                android:textColor="@color/colorPrimaryDark" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1value">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question3answer1"
+                    android:text="@string/goal"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question1answer2"
+                    android:layout_below="@+id/question3answer1"
+                    android:text="@string/touchdown"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question3answer3"
+                    android:text="@string/a_basket"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal|bold" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/question2text"
+                android:text="@string/_2134"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question2answer2"
+                android:layout_below="@+id/question2answer1"
+                android:text="@string/the_team_that_had_the_ball_no_longer_has_it"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="normal|bold">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/questions2answer4"
+                android:layout_below="@+id/question2answer3"
+                android:text="@string/they_get_a_trophy"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="normal|bold">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question2answer5"
+                android:layout_below="@+id/questions2answer4"
+                android:text="@string/it_s_a_travel"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="normal|bold">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question2answer3"
+                android:text="@string/nothing"
+                android:layout_below="@+id/question2answer2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="normal|bold">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question2answer1"
+                android:text="@string/possession_is_given_to_the_other_team"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="normal|bold"
+                android:layout_below="@+id/question2value"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </CheckBox>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/question2value"
+                android:text="@string/what_happens_if_a_player_fails_to_dribble_while_in_moving_with_the_ball_check_all_that_apply"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/question1text"
+                android:text="@string/_3124"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/question1value"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/in_which_country_is_basketball_a_major_sport"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/question1text" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1value">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question3answer1"
+                    android:text="@string/canada"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal|bold" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question3answer3"
+                    android:layout_below="@id/question3answer1"
+                    android:text="@string/united_kingdom"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal|bold" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question3answer3"
+                    android:layout_below="@id/question3answer3"
+                    android:text="@string/united_states_of_america"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal|bold" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/question4value"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/what_is_the_name_of_the_ball_used_in_basketball"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/question4text"
+                tools:ignore="UnknownIdInLayout" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question4answer"
+                android:layout_below="@id/question4value"
+                android:hint="@string/answer_here"
+                android:inputType="textMultiLine"
+                android:alpha="0.5"
+                android:textColor="@android:color/holo_blue_dark">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/question7text"
+                android:text="@string/_45312"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/holo_orange_dark" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/submitScore"
+            android:onClick="submitScore"/>
+
+    </LinearLayout>
+</ScrollView>
